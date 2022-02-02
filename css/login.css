@@ -313,12 +313,16 @@ small {
     padding-right: 2rem;
   }
 
+  .modalInfo .iconModal {
+    font-size: 2rem;
+  }
+
   .modal .form-group {
     text-align: left;
   }
 
   .text-help {
-    color: var(--danger-color);
+    color: var(--error);
     font-size: 12px;
     display: none;
   }
