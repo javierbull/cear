@@ -140,13 +140,30 @@ small {
 }
 
 .link-button {
-  background-color: salmon;
+  /* background-color: salmon; */
   color: var(--n-01);
   padding: 0.5rem  0;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .link-button:hover {
   color: var(--g-01);
+  text-decoration: underline;
+}
+
+.link-button:focus {
+  color: var(--a-02);
+  text-decoration: underline;
+}
+
+.link-button.disabled {
+  color: var(--g-02);
+  text-decoration: underline;
+}
+
+.link {
+
 }
 
 .form-group label {
@@ -190,12 +207,12 @@ small {
 }
 
 .form-login {
-  background-color: pink;
+  /* background-color: pink; */
   min-width: 480px;
 }
 
 .form-title {
-  background-color: lavender;
+  /* background-color: lavender; */
   text-align: center;
 }
 
@@ -245,7 +262,7 @@ small {
 
 /* Modal Contraseña olvidada */
   .modal-dialog {
-    border-radius: 2rem;
+    border-radius: .5rem;
     overflow: hidden;
   }
 
@@ -256,6 +273,12 @@ small {
     box-shadow: none;
   }
 
+  .modal-header {
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .modal-header, .modal-footer {
     border: none;
   }
@@ -263,8 +286,8 @@ small {
   .modal-body {
     /* background-color: pink; */
     text-align: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 0;
   }
 
@@ -278,6 +301,7 @@ small {
 
   .modal-title {
     font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 600;
   }
 
@@ -285,6 +309,8 @@ small {
     display: flex;
     justify-content: center;
     padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .modal .form-group {
