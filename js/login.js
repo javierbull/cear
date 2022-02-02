@@ -16,7 +16,7 @@ $(document).ready(function(){
 // END SHOW-HIDE PASSWORD
 
 $('.field__input').on('input', function() {
-  var $field = $(this).closest('.field');
+  var $field = $(this).closest('.field-floating-label');
   if (this.value) {
     $field.addClass('field--not-empty');
   } else {

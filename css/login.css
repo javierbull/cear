@@ -240,10 +240,7 @@ small {
 /* fin form login */
 
 /* Floating labels */
-body {
-  font-family: sans-serif;
-}
-.field {
+.field-floating-label {
   position: relative;
   max-width: 250px;
 }
