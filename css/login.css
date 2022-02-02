@@ -214,13 +214,6 @@ small {
   text-decoration: none;
 }
 
-.input-group-password {
-  /* background-color: pink; */
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-}
-
-
 .field-icon {
   background-color: var(--g-03);
   cursor: pointer;
@@ -273,9 +266,13 @@ small {
   padding: 1rem;
   transition: all 0.2s ease-out;
   width: 100%;
+  border-radius: .25rem;
 }
-.field__input:hover, .field__input:focus {
-  box-shadow: inset 0 0 10px 0 var(--a-02);
+.field__input:hover {
+  background-color: var(--c-02);
+}
+.field__input:focus {
+  box-shadow: inset 0 0 0 2px var(--a-02);
   outline: 0;
 }
 .field--not-empty .field__input {
