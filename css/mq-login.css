@@ -22,6 +22,15 @@
     min-width: 480px;
   }
 
+  .form-login .logo {
+    /* background-color: lavender; */
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5rem;
+    display: block;
+  }
+
 }
 
 /* Fin Big cell landscape */
