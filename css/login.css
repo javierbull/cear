@@ -275,6 +275,9 @@ small {
   box-shadow: inset 0 0 0 2px var(--a-02);
   outline: 0;
 }
+.field__input:disabled {
+  opacity: .4;
+}
 .field--not-empty .field__input {
   padding-top: 2.5rem;
   padding-bottom: 1rem;
