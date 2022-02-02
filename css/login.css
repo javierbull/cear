@@ -1,0 +1,266 @@
+/* Estilos Generales */
+:root {
+  --n-01: #2D2D2D;
+  --g-01: #757677;
+  --g-02: #BCBEBE;
+  --g-03: #EBECEC;
+  --b-01: #FFFFFF;
+  --a-01: #114357;
+  --a-02: #286781;
+  --c-01: #C5DADE;
+  --c-02: #E6EEEF;
+  --error: #FF3535;
+  --warning: #FFB700;
+  --info: #1A58DD;
+  --success: #06C170;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--n-01);
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+small {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.fw-sb {
+  font-weight: 600;
+}
+
+/* Fin Estilos Generales */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.primary-button {
+  background-color: var(--a-02);
+  color: var(--g-03);
+}
+
+.primary-button:hover {
+  background-color: var(--a-01);
+  color: var(--g-03);
+}
+
+
+
+.btn-link {
+  color: var(--secondary-color);
+}
+
+.btn-link:hover {
+  color: var(--secondary-color);
+}
+
+.form-group label {
+  opacity: .9;
+  font-size: .9rem;
+  margin-bottom: 5px;
+}
+
+/* main -------------------- */
+
+.main-login {
+  /* background-color: palegreen; */
+  min-height: 100vh;
+}
+
+/* img login */
+
+.wrap-img-login {
+  /* background-color: var(--info); */
+  background-image: url(../img/bg/bg-login.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Fin img login */
+
+/* form-login */
+
+.wrap-form-login {
+  background-color: var(--bg-content);
+  min-height: 100vh;
+  padding-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-form-login .card {
+  width: 25rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.wrap-form-login .card .card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-login button {
+  margin-bottom: 1rem;
+}
+
+.form-login .btn-principal {
+  margin-top: 2rem;
+}
+
+.input-group-addon {
+  /* background-color: yellow; */
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group-addon a {
+  /* background-color: pink; */
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.input-group-password {
+  /* background-color: pink; */
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: none;
+}
+
+
+.field-icon {
+  background-color: var(--white);
+  cursor: pointer;
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  margin-right: 11.250px;
+  position: relative;
+  z-index: 2;
+}
+
+/* fin form login */
+
+/* fin Main */
+
+video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* fin Main */
+
+/* Modal Contraseña olvidada */
+  .modal-dialog {
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  .modal .close:focus {
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .modal-header, .modal-footer {
+    border: none;
+  }
+
+  .modal-body {
+    /* background-color: pink; */
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0;
+  }
+
+  .modal-body img {
+    background-color: var(--primary-color);
+    height: 4rem;
+    padding: .5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .modal .form-group {
+    text-align: left;
+  }
+
+  .text-help {
+    color: var(--danger-color);
+    font-size: 12px;
+    display: none;
+  }
+
+/* Fin modal contraseña olvidada */
