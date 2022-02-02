@@ -15,6 +15,7 @@ $(document).ready(function(){
 });
 // END SHOW-HIDE PASSWORD
 
+// floating label
 $('.field__input').on('input', function() {
   var $field = $(this).closest('.field-floating-label');
   if (this.value) {
@@ -23,5 +24,7 @@ $('.field__input').on('input', function() {
     $field.removeClass('field--not-empty');
   }
 });
+
+// End floating label
 
 });
