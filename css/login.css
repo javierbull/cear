@@ -46,16 +46,6 @@ small {
   line-height: 1rem;
 }
 
-.container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.container-fluid {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .fw-sb {
   font-weight: 600;
 }
@@ -199,7 +189,7 @@ small {
 /* form-login */
 
 .wrap-form-login {
-  background-color: var(--bg-content);
+  /* background-color: var(--info); */
   min-height: 100vh;
   display: flex;
   justify-content: center;
