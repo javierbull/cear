@@ -46,6 +46,16 @@ small {
   line-height: 1rem;
 }
 
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .fw-sb {
   font-weight: 600;
 }
