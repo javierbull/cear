@@ -35,25 +35,34 @@
 
 				<div class="col-lg-6 wrap-form-login">
 					<form class="form-login">
-								<h5 class="card-title">Iniciar Sesión</h5>
-								<div class="form-group">
-									<label for="inputUser">Usuario</label>
-									<input type="text" class="form-control" id="inputUser" aria-describedby="emailHelp">
-									<small class="text-help">Usuario incorrecto</small>
-								</div>
+						<h1 class="form-title fw-sb marginBottom-2-5">
+							Bienvenido al <br>
+							Sistema Aleatorio
+						</h1>
 
-								<div class="form-group">
-									<label for="password-field">Contraseña</label>
-									<input id="password-field" type="password" class="form-control" name="password">
-									<span toggle="#password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
-									<small class="text-help">Contraseña incorrecta</small>
-								</div>
+						<div class="form-group">
+							<label for="inputUser">Usuario</label>
+							<input type="text" class="form-control" id="inputUser" aria-describedby="emailHelp">
+							<small class="text-help">Usuario incorrecto</small>
+						</div>
 
-								<button type="submit" class="btn primary-button disabled" disabled>Iniciar sesión</button>
-								<!-- <button type="button" class="btn btn-link btn-block" data-dismiss="modal" data-toggle="modal" data-target="#modalContraOlvidada">
-									¿Olvidaste tu contraseña?
-								</button> -->
-							</form>
+						<div class="form-group">
+							<label for="password-field">Contraseña</label>
+							<input id="password-field" type="password" class="form-control" name="password">
+							<span toggle="#password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
+							<small class="text-help">Contraseña incorrecta</small>
+						</div>
+
+						<div class="d-flex justify-content-start marginBottom-2-5">
+							<button type="button" class="btn link-button" data-toggle="modal" data-target="#modalContraOlvidada">
+								¿Olvidaste tu contraseña?
+							</button>
+						</div>
+
+						<div class="d-flex justify-content-center">
+							<button type="submit" class="btn primary-button">Iniciar sesión</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
