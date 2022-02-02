@@ -276,7 +276,7 @@ small {
   outline: 0;
 }
 .field__input:disabled {
-  opacity: .4;
+  opacity: .5;
 }
 .field--not-empty .field__input {
   padding-top: 2.5rem;
