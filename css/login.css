@@ -507,4 +507,9 @@ small {
   background-color: lavender;
   margin-bottom: 3.5rem;
 }
+
+.footer-stepper {
+  display: flex;
+  justify-content: center;
+}
 /* FIN SISTEMA ALEATORIO */

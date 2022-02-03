@@ -49,4 +49,12 @@ $(".step3-registro").click(function() {
 
 // Fin Stepper
 
+$(".select2").select2({
+  theme: 'bootstrap4',
+});
+
+$(".select2-multiple").select2({
+  theme: 'bootstrap4',
+});
+
 });

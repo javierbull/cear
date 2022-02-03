@@ -14,6 +14,12 @@
 	<script src="js/plugin/webfont/webfont.min.js"></script>
 	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
 	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="js/plugin/datatables/datatables.css" />
+	<link rel="stylesheet" type="text/css" href="js/plugin/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+	<link href="js/plugin/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+	<link href="js/plugin/timepicker/jquery.timepicker.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="js/plugin/select2/select2.css">
+	<link rel="stylesheet" href="js/plugin/select2/select2-bootstrap4.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/login.css">
@@ -81,6 +87,7 @@
 							</div>
 
 							<div class="body-step">
+
 								<div class="form-group">
 									<label for="inputState">Categoría de captación</label>
 									<select id="inputState" class="form-control select2">
@@ -91,6 +98,17 @@
 									</select>
 									<small class="text-help">Campo obligatorio</small>
 								</div>
+
+								<div class="field-floating-label">
+									<label class="field__label" for="inputCategory">Categoría de captación</label>
+									<select id="inputCategory" class="field__input one-column-form__input--text select2">
+										<option selected>Seleccione</option>
+										<option>Contratación pública</option>
+										<option>Arbitraje de emergencia</option>
+									</select>
+									<small class="text-help">Campo obligatorio</small>
+								</div>
+
 							</div>
 
 							<div class="footer-stepper">
@@ -232,7 +250,14 @@
 	<script src="js/bootstrap/popper.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 
-	<!-- <script src="js/main.js"></script> -->
+	<script type="text/javascript" src="js/plugin/datatables/datatables.min.js"></script>
+
+	<script src="js/plugin/datepicker/moment.js"></script>
+	<script src="js/plugin/datepicker/daterangepicker.js"></script>
+	<script src="js/plugin/timepicker/jquery.timepicker.js"></script>
+	<script src="js/plugin/select2/select2.js"></script>
+
+
 	<script src="js/login.js"></script>
 
 </body>
