@@ -316,7 +316,6 @@ small {
   color: var(--g-01);
 }
 
-
 /* Fin Floating labels */
 
 
@@ -351,6 +350,7 @@ small {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0;
+    padding-bottom: 1.5rem;
   }
 
   .modal-title {
@@ -365,6 +365,7 @@ small {
     padding-bottom: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 0;
   }
 
   .modalInfo .iconModal {
