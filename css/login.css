@@ -452,6 +452,7 @@ small {
 
 .stepper {
   width: 30rem;
+  margin-bottom: 2.5rem;
 }
 
 .step {
@@ -500,5 +501,10 @@ small {
 
 .step-completed .step-position {
   background-color: var(--a-01);
+}
+
+.body-step {
+  background-color: lavender;
+  margin-bottom: 3.5rem;
 }
 /* FIN SISTEMA ALEATORIO */
