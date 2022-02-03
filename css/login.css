@@ -440,6 +440,7 @@ small {
 
 /* SISTEMA ALEATORIO */
 .wrap-stepper {
+  /* background-color: pink; */
 }
 
 .fieldset-step {
@@ -451,7 +452,8 @@ small {
 }
 
 .stepper {
-  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2.5rem;
 }
 
@@ -504,8 +506,13 @@ small {
 }
 
 .body-step {
-  background-color: lavender;
+  /* background-color: lavender; */
   margin-bottom: 3.5rem;
+}
+
+.body-step1 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-stepper {
