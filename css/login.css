@@ -138,7 +138,7 @@ small {
 }
 
 .link-button:hover {
-  color: var(--g-01);
+  color: var(--a-02);
   text-decoration: underline;
 }
 
