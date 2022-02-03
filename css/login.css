@@ -197,6 +197,14 @@ small {
 }
 /* End Buttons */
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 /* Fin Estilos Generales */
 
 /* main -------------------- */
@@ -431,5 +439,15 @@ small {
 /* Fin modal contraseña olvidada */
 
 /* SISTEMA ALEATORIO */
+.wrap-stepper {
 
+}
+
+.fieldset-step {
+  display: none;
+}
+
+.fieldset-step.show {
+  display: block;
+}
 /* FIN SISTEMA ALEATORIO */
