@@ -46,10 +46,18 @@ small {
   line-height: 1rem;
 }
 
+/* Font weight */
+.fw-eb {
+  font-weight: 800;
+}
+
 .fw-sb {
   font-weight: 600;
 }
 
+/*End Font weight */
+
+/* Margins */
 .marginBottom-1 {
   margin-bottom: 1rem;
 }
@@ -83,7 +91,9 @@ small {
   margin-bottom: 4.5rem;
 }
 
-/* Fin Estilos Generales */
+/* End Margins */
+
+/* Buttons */
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -95,9 +105,9 @@ small {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: .5rem 1rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.5rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -108,7 +118,7 @@ small {
 }
 
 .btn-large {
-  padding: .5rem 3rem;
+  padding: .75rem 3rem;
 }
 
 .btn-icon {
@@ -185,6 +195,9 @@ small {
   color: var(--b-01);
   opacity: 1;
 }
+/* End Buttons */
+
+/* Fin Estilos Generales */
 
 /* main -------------------- */
 

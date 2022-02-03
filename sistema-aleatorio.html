@@ -22,24 +22,89 @@
 </head>
 
 <body>
-
-<main>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="btn-group ml-auto">
-			<button type="button" class="btn btn-icon light-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Nombre usuario
-				<span class="material-icons">
-					account_circle
-				</span>
-			</button>
-			<div class="dropdown-menu dropdown-menu-right">
-				<button class="dropdown-item" type="button">Cerrar sesión</button>
+	<header class="marginBottom-1-5">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="btn-group ml-auto">
+				<button type="button" class="btn btn-icon light-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Nombre usuario
+					<span class="material-icons">
+						account_circle
+					</span>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<button class="dropdown-item" type="button">Cerrar sesión</button>
+				</div>
 			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="text-center fw-eb marginBottom-2">
+						Nuevo sorteo
+					</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="wrap-stepper">
+						<fieldset class="fieldset-step show" id="content-step1-especialidad">
+							<div class="stepper container">
+								<div class="row">
+									<div class="step col-4 step1-especialidad activeStep">
+										<div class="step-position">
+											1
+										</div>
+										<div class="step-text">
+											Seleccione una especialidad
+										</div>
+									</div>
+									<div class="step col-4 step2-sorteo">
+										<div class="step-position">
+											2
+										</div>
+										<div class="step-text">
+											Sorteo al árbitro
+										</div>
+									</div>
+									<div class="step col-4 step3-registro">
+										<div class="step-position">
+											3
+										</div>
+										<div class="step-text">
+											Registra de resultados
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputState">Categoría de captación</label>
+								<select id="inputState" class="form-control select2">
+									<option selected>SELECCIONE</option>
+									<option>CARTERA</option>
+									<option>PESQUISA</option>
+									<option>POTENCIAL</option>
+								</select>
+								<small class="text-help">Campo obligatorio</small>
+							</div>
+
+							<div class="footer-stepper">
+								<button type="button" name="button" class="btn btn-large primary-button step2-sorteo">
+									Siguiente
+								</button>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+
 		</div>
-	</nav>
 
 
-</main>
+	</main>
 
 	<!-- Modals -->
 
