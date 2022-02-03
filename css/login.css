@@ -493,4 +493,12 @@ small {
 .activeStep .step-position {
   background-color: var(--a-01);
 }
+
+.step-completed {
+  color: var(--a-01);
+}
+
+.step-completed .step-position {
+  background-color: var(--a-01);
+}
 /* FIN SISTEMA ALEATORIO */
