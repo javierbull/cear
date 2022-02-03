@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Login</title>
+	<title>Sistema Aleatorio</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,56 +23,23 @@
 
 <body>
 
-	<main class="main-login">
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-6 wrap-img-login">
-					<div class="animated fadeIn">
-						<img src="img/logos/logo-cear-negativo.png" alt="CEAR Centro de Arbitraje Latinoamericano e Investigaciones Jurídicas">
-					</div>
-				</div>
-
-				<div class="col-lg-6 wrap-form-login">
-					<form class="form-login">
-
-						<div class="logo">
-							<img src="img/logos/logo-cear.png" alt="CEAR Centro de Arbitraje Latinoamericano e Investigaciones Jurídicas">
-						</div>
-
-						<h1 class="form-title fw-sb marginBottom-2-5">
-							Bienvenido al <br>
-							Sistema Aleatorio
-						</h1>
-
-							<div class="field-floating-label">
-								<label class="field__label" for="input-user">Usuario</label>
-								<input class="field__input one-column-form__input--text" id="input-user" type="text" placeholder="Usuario">
-								<small class="text-help">Usuario incorrecto</small>
-							</div>
-
-						<div class="field-floating-label">
-							<label for="password-field" class="field__label">Contraseña</label>
-							<input id="password-field" type="password" class="field__input one-column-form__input--text" placeholder="Contraseña">
-							<span toggle="#password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
-							<small class="text-help">Contraseña incorrecta</small>
-						</div>
-
-						<div class="d-flex justify-content-start marginBottom-2-5">
-							<button type="button" class="btn link-button" data-toggle="modal" data-target="#modalContraOlvidada">
-								¿Olvidaste tu contraseña?
-							</button>
-						</div>
-
-						<div class="d-flex justify-content-center">
-							<button type="submit" class="btn btn-large primary-button">Iniciar sesión</button>
-						</div>
-					</form>
-				</div>
+<main>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="btn-group ml-auto">
+			<button type="button" class="btn btn-icon light-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Nombre usuario
+				<span class="material-icons">
+					account_circle
+				</span>
+			</button>
+			<div class="dropdown-menu dropdown-menu-right">
+				<button class="dropdown-item" type="button">Cerrar sesión</button>
 			</div>
 		</div>
+	</nav>
 
-	</main>
+
+</main>
 
 	<!-- Modals -->
 
@@ -104,7 +71,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-large primary-button" data-dismiss="modal">
+					<button type="button" class="btn primary-button" data-dismiss="modal">
 						Solicitar recuperación
 					</button>
 				</div>

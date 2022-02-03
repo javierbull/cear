@@ -94,9 +94,8 @@ small {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.5rem 3rem;
+  padding: .5rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
@@ -106,6 +105,19 @@ small {
 .btn:focus, .btn.focus {
   outline: 0;
   box-shadow: none;
+}
+
+.btn-large {
+  padding: .5rem 3rem;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+.btn-icon .material-icons {
+  padding-left: 1rem;
 }
 
 .primary-button {
@@ -150,6 +162,28 @@ small {
 .link-button.disabled {
   color: var(--g-02);
   text-decoration: underline;
+}
+
+.light-button {
+  color: var(--n-01);
+}
+
+.light-button:hover {
+  color: var(--n-01);
+  background-color: var(--g-03);
+}
+
+.btn-light:focus, .btn-light.focus {
+  color: var(--n-01);
+  background-color: var(--g-03);
+  border-color: var(--g-03);
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+.btn-light.disabled, .btn-light:disabled {
+  background-color: var(--g-02);
+  color: var(--b-01);
+  opacity: 1;
 }
 
 /* main -------------------- */
@@ -382,3 +416,7 @@ small {
   }
 
 /* Fin modal contraseña olvidada */
+
+/* SISTEMA ALEATORIO */
+
+/* FIN SISTEMA ALEATORIO */
