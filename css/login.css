@@ -440,7 +440,6 @@ small {
 
 /* SISTEMA ALEATORIO */
 .wrap-stepper {
-
 }
 
 .fieldset-step {
@@ -449,5 +448,49 @@ small {
 
 .fieldset-step.show {
   display: block;
+}
+
+.stepper {
+  width: 30rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--g-02);
+}
+
+.step:hover {
+  cursor: pointer;
+}
+
+.step-text {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.step-position {
+  background-color: var(--g-02);
+  width: 2rem;
+  height: 2rem;
+  color: var(--b-01);
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+.activeStep {
+  color: var(--a-01);
+  border-bottom: solid 2px var(--a-01);
+}
+
+.activeStep .step-position {
+  background-color: var(--a-01);
 }
 /* FIN SISTEMA ALEATORIO */
