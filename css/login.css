@@ -9,7 +9,7 @@
   --a-02: #286781;
   --c-01: #C5DADE;
   --c-02: #E6EEEF;
-  --error: #FF3535;
+  --error: #C60D0D;
   --warning: #FFB700;
   --info: #1A58DD;
   --success: #06C170;
@@ -371,6 +371,23 @@ small {
   color: var(--g-01);
 }
 
+.text-help {
+  color: var(--error);
+  display: flex;
+  align-items: center;
+  padding-top: .25rem;
+  display: none;
+}
+
+.text-help .material-icons {
+  margin-right: .5rem;
+}
+
+.field__input.error-input {
+  box-shadow: inset 0 0 0 2px var(--error);
+  outline: 0;
+}
+
 /* Fin Floating labels */
 
 
@@ -431,10 +448,6 @@ small {
     text-align: left;
   }
 
-  .text-help {
-    color: var(--error);
-    display: none;
-  }
 
 /* Fin modal contraseña olvidada */
 
