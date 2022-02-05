@@ -27,27 +27,7 @@ $('.field__input').on('input', function() {
 
 // End floating label
 
-// Stepper
-$(".step1-especialidad").click(function() {
-  $("#content-step1-especialidad").show();
-  $("#content-step2-sorteo").hide();
-  $("#content-step3-registro").hide();
-});
-
-$(".step2-sorteo").click(function() {
-  $("#content-step1-especialidad").hide();
-  $("#content-step2-sorteo").show();
-  $("#content-step3-registro").hide();
-});
-
-$(".step3-registro").click(function() {
-  $("#content-step1-especialidad").hide();
-  $("#content-step2-sorteo").hide();
-  $("#content-step3-registro").show();
-});
-
-
-// Fin Stepper
+// Select2
 
 $(".select2").select2({
   theme: 'bootstrap4',
@@ -56,5 +36,9 @@ $(".select2").select2({
 $(".select2-multiple").select2({
   theme: 'bootstrap4',
 });
+
+// End select2
+
+
 
 });

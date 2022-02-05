@@ -452,6 +452,7 @@ small {
 /* Fin modal contraseña olvidada */
 
 /* SISTEMA ALEATORIO */
+/* Stepper tabs */
 .nav-pills-stepper {
   /* background-color: pink; */
   margin-left: auto;
@@ -516,4 +517,22 @@ small {
   display: flex;
   justify-content: center;
 }
+
+/* Fin stepper tab */
+
+/* Grid cards abogados */
+.grid-container-abogados {
+  /* background-color: pink; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.grid-container-abogados .item {
+  background-color: lavender;
+  border-radius: .5rem;
+  /* height: 14rem; */
+}
+
+/* Fin grid cards abogados */
 /* FIN SISTEMA ALEATORIO */
