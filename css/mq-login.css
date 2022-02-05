@@ -57,6 +57,12 @@
   .form-login {
     min-width: 100%;
   }
+
+  .nav-pills .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: .75rem;
+  }
 }
 
 /* Fin cell portrait */
