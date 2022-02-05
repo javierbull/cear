@@ -497,6 +497,17 @@ small {
   height: 100%;
 }
 
+/* estilo del paso completado */
+.nav-pills-stepper .nav-link.completed .step-position {
+  background-color: var(--a-01);
+}
+
+.nav-pills-stepper .nav-link.completed {
+  color: var(--a-01);
+}
+
+/* fin del estilo del paso completado */
+
 .tab-content-stepper {
   /* background-color: lavender; */
 }
