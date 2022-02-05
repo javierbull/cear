@@ -54,155 +54,44 @@
 			</div>
 
 			<div class="row">
-				<div class="col">
-					<div class="wrap-stepper">
-						<fieldset class="fieldset-step show" id="content-step1-especialidad">
-							<div class="stepper col-lg-6">
-								<div class="container">
-									<div class="row">
-										<div class="step col-4 step1-especialidad activeStep">
-											<div class="step-position">
-												1
-											</div>
-											<div class="step-text">
-												Seleccione una especialidad
-											</div>
-										</div>
-										<div class="step col-4 step2-sorteo">
-											<div class="step-position">
-												2
-											</div>
-											<div class="step-text">
-												Sortea al árbitro
-											</div>
-										</div>
-										<div class="step col-4 step3-registro">
-											<div class="step-position">
-												3
-											</div>
-											<div class="step-text">
-												Registra de resultados
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+				<ul class="nav nav-pills nav-pills-stepper col-xl-6 marginBottom-2-5" id="pills-tab" role="tablist">
+					<li class="nav-item col-4">
+						<a class="nav-link active" id="pills-especialidad-tab" data-toggle="pill" href="#pills-especialidad" role="tab" aria-controls="pills-especialidad" aria-selected="true">Home</a>
+					</li>
+					<li class="nav-item col-4">
+						<a class="nav-link" id="pills-sorteo-tab" data-toggle="pill" href="#pills-sorteo" role="tab" aria-controls="pills-sorteo" aria-selected="false">Profile</a>
+					</li>
+					<li class="nav-item col-4">
+						<a class="nav-link" id="pills-registro-tab" data-toggle="pill" href="#pills-registro" role="tab" aria-controls="pills-registro" aria-selected="false">Contact</a>
+					</li>
+				</ul>
+				<div class="tab-content tab-content-stepper col-12" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-especialidad" role="tabpanel" aria-labelledby="pills-especialidad-tab">
+						<div class="field-floating-label">
+							<label class="field__label" for="inputCategory">Categoría de captación</label>
+							<select id="inputCategory" class="field__input one-column-form__input--text">
+								<option selected>Seleccione</option>
+								<option>Contratación pública</option>
+								<option>Arbitraje de emergencia</option>
+							</select>
+							<small class="text-help">Campo obligatorio</small>
+						</div>
 
-							<div class="container">
-								<div class="row">
-									<div class="body-step body-step1 col-xl-5 col-md-8">
-
-										<div class="field-floating-label">
-											<label class="field__label" for="inputCategory">Categoría de captación</label>
-											<select id="inputCategory" class="field__input one-column-form__input--text">
-												<option selected>Seleccione</option>
-												<option>Contratación pública</option>
-												<option>Arbitraje de emergencia</option>
-											</select>
-											<small class="text-help">Campo obligatorio</small>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="footer-stepper">
-								<button type="button" name="button" class="btn btn-large primary-button step2-sorteo">
-									Continuar
-								</button>
-							</div>
-						</fieldset>
-
-						<fieldset class="fieldset-step" id="content-step2-sorteo">
-							<div class="stepper col-lg-6">
-								<div class="container">
-									<div class="row">
-									<div class="step col-4 step1-especialidad step-completed">
-										<div class="step-position">
-											1
-										</div>
-										<div class="step-text">
-											Seleccione una especialidad
-										</div>
-									</div>
-									<div class="step col-4 step2-sorteo activeStep">
-										<div class="step-position">
-											2
-										</div>
-										<div class="step-text">
-											Sortea al árbitro
-										</div>
-									</div>
-									<div class="step col-4 step3-registro">
-										<div class="step-position">
-											3
-										</div>
-										<div class="step-text">
-											Registra de resultados
-										</div>
-									</div>
-								</div>
-								</div>
-							</div>
-
-							<div class="body-step">
-								content step 2
-							</div>
-
-							<div class="footer-stepper">
-								<button type="button" name="button" class="btn btn-large primary-button step3-registro">
-									Sortear
-								</button>
-							</div>
-						</fieldset>
-						<fieldset class="fieldset-step" id="content-step3-registro">
-							<div class="stepper col-lg-6">
-								<div class="container">
-									<div class="row">
-									<div class="step col-4 step1-especialidad step-completed">
-										<div class="step-position">
-											1
-										</div>
-										<div class="step-text">
-											Seleccione una especialidad
-										</div>
-									</div>
-									<div class="step col-4 step2-sorteo step-completed">
-										<div class="step-position">
-											2
-										</div>
-										<div class="step-text">
-											Sortea al árbitro
-										</div>
-									</div>
-									<div class="step col-4 step3-registro activeStep">
-										<div class="step-position">
-											3
-										</div>
-										<div class="step-text">
-											Registra de resultados
-										</div>
-									</div>
-								</div>
-								</div>
-							</div>
-
-							<div class="body-step">
-								content step 3
-							</div>
-
-							<div class="footer-stepper">
-								<button type="button" name="button" class="btn btn-large primary-button">
-									Registrar
-								</button>
-							</div>
-						</fieldset>
+						<div class="footer-stepper">
+							<button type="button" name="button" class="btn btn-large primary-button">
+								Registrar
+							</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-sorteo" role="tabpanel" aria-labelledby="pills-sorteo-tab">
+						Content 2
+					</div>
+					<div class="tab-pane fade" id="pills-registro" role="tabpanel" aria-labelledby="pills-registro-tab">
+						Content 3
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 
 	</main>
 

@@ -452,84 +452,13 @@ small {
 /* Fin modal contraseña olvidada */
 
 /* SISTEMA ALEATORIO */
-.wrap-stepper {
-  /* background-color: pink; */
-}
-
-.fieldset-step {
-  display: none;
-}
-
-.fieldset-step.show {
-  display: block;
-}
-
-.stepper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2.5rem;
-}
-
-.step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--g-02);
-}
-
-.step:hover {
-  cursor: pointer;
-}
-
-.step-text {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.step-position {
-  background-color: var(--g-02);
-  width: 2rem;
-  height: 2rem;
-  color: var(--b-01);
-  font-size: 1.5rem;
-  font-weight: 800;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-bottom: .5rem;
-}
-
-.activeStep {
-  color: var(--a-01);
-  border-bottom: solid 2px var(--a-01);
-}
-
-.activeStep .step-position {
-  background-color: var(--a-01);
-}
-
-.step-completed {
-  color: var(--a-01);
-}
-
-.step-completed .step-position {
-  background-color: var(--a-01);
-}
-
-.body-step {
-  /* background-color: lavender; */
-  margin-bottom: 3.5rem;
-}
-
-.body-step1 {
+.nav-pills-stepper {
+  background-color: pink;
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-stepper {
-  display: flex;
-  justify-content: center;
+.tab-content-stepper {
+  background-color: lavender;
 }
 /* FIN SISTEMA ALEATORIO */
