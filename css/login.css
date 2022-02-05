@@ -453,9 +453,27 @@ small {
 
 /* SISTEMA ALEATORIO */
 .nav-pills-stepper {
-  background-color: pink;
+  /* background-color: pink; */
   margin-left: auto;
   margin-right: auto;
+}
+
+.nav-pills-stepper .nav-link {
+  color: var(--g-02);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-pills-stepper .nav-link.active,
+.nav-pills-stepper .show > .nav-link {
+  color: var(--a-01);
+  background-color: var(--b-01);
+  border-bottom: solid 2px var(--a-01);
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
 }
 
 .tab-content-stepper {
