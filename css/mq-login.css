@@ -6,7 +6,6 @@
 @media (max-width: 1024px) {
   .form-login {
     min-width: 100%;
-    padding: 2rem;
   }
 }
 
@@ -54,6 +53,11 @@
 /* Fin small cell landscape */
 /* Cell portrait */
 @media (max-width: 480px) {
+  .container-fluid, .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .form-login {
     min-width: 100%;
   }
