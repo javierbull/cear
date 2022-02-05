@@ -59,32 +59,32 @@ small {
 
 /* Margins */
 .marginBottom-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .marginBottom-1-5 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
 .marginBottom-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .marginBottom-2-5 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem !important;
 }
 
 
 .marginBottom-3 {
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
 
 .marginBottom-3-5 {
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem !important;
 }
 
 .marginBottom-4 {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .marginBottom-4-5 {
@@ -493,6 +493,11 @@ small {
 }
 
 .tab-content-stepper {
-  background-color: lavender;
+  /* background-color: lavender; */
+}
+
+.footer-stepper {
+  display: flex;
+  justify-content: center;
 }
 /* FIN SISTEMA ALEATORIO */
