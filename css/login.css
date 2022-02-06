@@ -58,6 +58,10 @@ small {
 /*End Font weight */
 
 /* Margins */
+.marginBottom-0-5 {
+  margin-bottom: .5rem !important;
+}
+
 .marginBottom-1 {
   margin-bottom: 1rem !important;
 }
