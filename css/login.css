@@ -451,7 +451,7 @@ small {
 /* Fin modal contraseña olvidada */
 
 /* modal arbitro elegido */
-.card-lawyer-modal {
+.card-lawyer-elected {
   background-color: var(--g-03);
   display: flex;
   justify-content: space-between;
@@ -462,12 +462,12 @@ small {
   margin-bottom: .5rem;
 }
 
-.card-lawyer-modal .name-lawyer {
+.card-lawyer-elected .name-lawyer {
   font-weight: 600;
   margin-bottom: .5rem;
 }
 
-.card-lawyer-modal .user-img {
+.card-lawyer-elected .user-img {
   min-width: 5rem;
   min-height: 5rem;
   max-width: 5rem;
@@ -476,7 +476,7 @@ small {
   border-radius: 50%;
 }
 
-.card-lawyer-modal .user-img img {
+.card-lawyer-elected .user-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
