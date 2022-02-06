@@ -567,7 +567,9 @@ small {
 
 .footer-stepper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 2.5rem;
 }
 
