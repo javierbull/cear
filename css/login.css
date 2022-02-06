@@ -448,37 +448,54 @@ small {
   .modal .form-group {
     text-align: left;
   }
-
-  .card-lawyer-modal {
-    background-color: var(--g-03);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    text-align: left;
-    border-radius: .25rem;
-  }
-
-  .card-lawyer-modal .name-lawyer {
-    font-weight: 600;
-    margin-bottom: .5rem;
-  }
-
-  .card-lawyer-modal .user-img {
-    width: 5rem;
-    height: 5rem;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
-  .card-lawyer-modal .user-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-
 /* Fin modal contraseña olvidada */
+
+/* modal arbitro elegido */
+.card-lawyer-modal {
+  background-color: var(--g-03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  text-align: left;
+  border-radius: .25rem;
+  margin-bottom: .5rem;
+}
+
+.card-lawyer-modal .name-lawyer {
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.card-lawyer-modal .user-img {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-lawyer-modal .user-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-especialidad {
+  background-color: var(--g-03);
+  border-radius: .25rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.card-especialidad .material-icons {
+  color: var(--success);
+}
+
+/* Fin modal arbitro elegido */
 
 /* SISTEMA ALEATORIO */
 /* Stepper tabs */
