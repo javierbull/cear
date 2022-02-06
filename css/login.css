@@ -533,11 +533,30 @@ small {
 }
 
 .card-lawyer {
-  border-radius: .5rem;
+  border-radius: .25rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
 }
 
 .card-lawyer.disponible {
   background-color: var(--c-01);
+}
+
+.card-lawyer.disponible .indicator {
+  background-color: var(--success);
+}
+
+.card-lawyer.ocupado {
+  background-color: var(--g-03);
+}
+
+.card-lawyer.ocupado .indicator {
+  background-color: var(--error);
+}
+
+.card-lawyer.ocupado .info-user {
+  color: var(--g-02);
 }
 
 .card-lawyer .user-img {
@@ -545,6 +564,7 @@ small {
   width: 2.5rem;
   border-radius: 50%;
   overflow: hidden;
+  margin-right: 1rem;
 }
 
 .card-lawyer .user-img img {
@@ -553,7 +573,25 @@ small {
   object-fit: cover;
 }
 
+.card-lawyer .info-user .name-user {
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
+.card-lawyer .status-user {
+  display: flex;
+  align-items: center;
+}
 
+.card-lawyer .status-user .indicator {
+  display: block;
+  height: .5rem;
+  width: .5rem;
+  border-radius: 50%;
+  margin-right: .5rem;
+}
 /* Fin grid cards abogados */
 /* FIN SISTEMA ALEATORIO */
