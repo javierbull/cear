@@ -119,7 +119,7 @@
 									<img src="img/avatars/user1.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										Raúl Osorio
 									</div>
 									<div class="status-user">
@@ -136,7 +136,7 @@
 									<img src="img/avatars/user2.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										María Torres
 									</div>
 									<div class="status-user">
@@ -153,7 +153,7 @@
 									<img src="img/avatars/user1.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										Raúl Osorio
 									</div>
 									<div class="status-user">
@@ -170,7 +170,7 @@
 									<img src="img/avatars/user2.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										María Torres
 									</div>
 									<div class="status-user">
@@ -187,7 +187,7 @@
 									<img src="img/avatars/user1.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										Raúl Osorio
 									</div>
 									<div class="status-user">
@@ -204,7 +204,7 @@
 									<img src="img/avatars/user2.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										María Torres
 									</div>
 									<div class="status-user">
@@ -221,7 +221,7 @@
 									<img src="img/avatars/user1.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										Raúl Osorio
 									</div>
 									<div class="status-user">
@@ -238,7 +238,7 @@
 									<img src="img/avatars/user2.png" alt="">
 								</div>
 								<div class="info-user">
-									<div class="name-user">
+									<div class="name-lawyer">
 										María Torres
 									</div>
 									<div class="status-user">
@@ -250,10 +250,9 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 						<div class="footer-stepper">
-							<button type="button" name="button" class="btn btn-large primary-button">
+							<button type="button" name="button" class="btn btn-large primary-button" data-toggle="modal" data-target="#modalArbitroElegido">
 								Sortear
 							</button>
 						</div>
@@ -271,7 +270,8 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+	<div class="modal fade modalInfo" id="modalArbitroElegido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -283,22 +283,27 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<span class="material-icons iconModal">
-						https
-					</span>
-					<h1 class="modal-title marginBottom-1-5" id="exampleModalLabel">Recuperación de contraseña</h1>
-					<p>
-						Ingresa tu usuario para solicitar la recuperación de tu contraseña:
-					</p>
-					<div class="field-floating-label mb-0">
-						<label class="field__label" for="input-user">Usuario</label>
-						<input class="field__input one-column-form__input--text" id="input-user" type="text" placeholder="Usuario">
-						<small class="text-help">Usuario incorrecto</small>
+					<h1 class="modal-title marginBottom-1-5" id="exampleModalLabel">El árbitro elegido es:</h1>
+					<div class="card-lawyer-modal">
+						<div class="info-lawyer">
+							<div class="name-lawyer">
+								Raúl Osorio
+							</div>
+							<div class="cal-lawyer">
+								CAL: 4687
+							</div>
+						</div>
+						<div class="user-img">
+							<img src="img/avatars/user1.png" alt="">
+						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn primary-button" data-dismiss="modal">
-						Solicitar recuperación
+					<button type="button" class="btn primary-button btn-large" data-dismiss="modal">
+						Aceptar
+					</button>
+					<button type="button" class="btn link-button" data-dismiss="modal">
+						Cancelar
 					</button>
 				</div>
 			</div>

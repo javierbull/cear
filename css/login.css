@@ -433,6 +433,7 @@ small {
 
   .modal-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-bottom: 1.5rem;
     padding-left: 2rem;
@@ -446,6 +447,34 @@ small {
 
   .modal .form-group {
     text-align: left;
+  }
+
+  .card-lawyer-modal {
+    background-color: var(--g-03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-align: left;
+    border-radius: .25rem;
+  }
+
+  .card-lawyer-modal .name-lawyer {
+    font-weight: 600;
+    margin-bottom: .5rem;
+  }
+
+  .card-lawyer-modal .user-img {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .card-lawyer-modal .user-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
 
@@ -574,7 +603,7 @@ small {
   object-fit: cover;
 }
 
-.card-lawyer .info-user .name-user {
+.card-lawyer .info-user .name-lawyer {
   font-weight: 600;
   display: -webkit-box;
   -webkit-line-clamp: 1;
