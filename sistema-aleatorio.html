@@ -85,7 +85,7 @@
 
 						<div class="row">
 							<div class="field-floating-label col-xl-6 mx-auto marginBottom-3-5">
-								<label class="field__label" for="inputCategory">Categoría de captación</label>
+								<label class="field__label" for="inputCategory">Especialidad</label>
 								<select id="inputCategory" class="field__input one-column-form__input--text">
 									<option selected>Seleccione</option>
 									<option>Contratación pública</option>
@@ -97,33 +97,63 @@
 
 						<div class="footer-stepper">
 							<button type="button" name="button" class="btn btn-large primary-button">
-								Registrar
+								Continuar
 							</button>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="pills-sorteo" role="tabpanel" aria-labelledby="pills-sorteo-tab">
-						<div class="grid-container-abogados">
-							<div class="item">
-								abogado 1
+						<div class="row">
+							<div class="field-floating-label col-xl-6 mx-auto marginBottom-3-5">
+								<label class="field__label" for="inputCategory">Especialidad</label>
+								<select id="inputCategory" class="field__input one-column-form__input--text">
+									<option>Seleccione</option>
+									<option selected>Contratación pública</option>
+									<option>Arbitraje de emergencia</option>
+								</select>
+								<small class="text-help">Campo obligatorio</small>
 							</div>
-							<div class="item">
+						</div>
+						<div class="grid-container-abogados marginBottom-3-5">
+							<div class="item card-lawyer disponible">
+								<div class="user-img">
+									<img src="img/avatars/user1.png" alt="">
+								</div>
+								<div class="info-user">
+									<div class="name-user">
+										Raúl osorio
+									</div>
+									<div class="status-user">
+										<span class="indicator">
+										</span>
+										<span>
+											Disponible
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="item card-lawyer">
 								abogado 2
 							</div>
-							<div class="item">
+							<div class="item card-lawyer">
 								abogado 3
 							</div>
-							<div class="item">
+							<div class="item card-lawyer">
 								abogado 4
 							</div>
-							<div class="item">
+							<div class="item card-lawyer">
 								abogado 5
 							</div>
-							<div class="item">
+							<div class="item card-lawyer">
 								abogado 6
 							</div>
-							<div class="item">
+							<div class="item card-lawyer">
 								abogado 7
 							</div>
+						</div>
+						<div class="footer-stepper">
+							<button type="button" name="button" class="btn btn-large primary-button">
+								Sortear
+							</button>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="pills-registro" role="tabpanel" aria-labelledby="pills-registro-tab">

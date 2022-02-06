@@ -524,15 +524,36 @@ small {
 .grid-container-abogados {
   /* background-color: pink; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
 
 .grid-container-abogados .item {
-  background-color: lavender;
-  border-radius: .5rem;
   /* height: 14rem; */
 }
+
+.card-lawyer {
+  border-radius: .5rem;
+}
+
+.card-lawyer.disponible {
+  background-color: var(--c-01);
+}
+
+.card-lawyer .user-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-lawyer .user-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 /* Fin grid cards abogados */
 /* FIN SISTEMA ALEATORIO */
