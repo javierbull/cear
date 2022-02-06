@@ -39,6 +39,14 @@ $(".select2-multiple").select2({
 
 // End select2
 
+$("#show-resumen").click(function() {
+  $("#content-sorteo").hide();
+  $("#content-resumen").show();
+});
 
+$("#show-sorteo").click(function() {
+  $("#content-sorteo").show();
+  $("#content-resumen").hide();
+});
 
 });

@@ -649,4 +649,7 @@ small {
   margin-right: .5rem;
 }
 /* Fin grid cards abogados */
+#content-resumen {
+  display: none;
+}
 /* FIN SISTEMA ALEATORIO */
