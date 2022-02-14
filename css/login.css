@@ -354,9 +354,10 @@ small {
   margin-right: .5rem;
 }
 
-.form-control.error-input {
+.error-input .form-control {
   box-shadow: inset 0 0 0 2px var(--error);
   outline: 0;
+  color: var(--error);
 }
 
 /* fin Main */
