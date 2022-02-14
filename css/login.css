@@ -157,19 +157,19 @@ small {
 
 .link-button {
   /* background-color: salmon; */
-  color: var(--n-01);
+  color: var(--a-02);
   padding: 0.5rem  0;
   text-decoration: underline;
   font-weight: 600;
 }
 
 .link-button:hover {
-  color: var(--a-02);
+  color: var(--a-01);
   text-decoration: underline;
 }
 
 .link-button:focus {
-  color: var(--a-02);
+  color: var(--a-01);
   text-decoration: underline;
 }
 
@@ -335,22 +335,10 @@ small {
 
 /* fin form login */
 
-/* Floating labels */
 
-
-
-.field__input:disabled {
+.form-control:disabled {
   opacity: .5;
 }
-.field--not-empty .field__input {
-  padding-top: 2.5rem;
-  padding-bottom: 1rem;
-}
-
-/* Fin Floating labels */
-
-/* Form styles */
-
 
 .text-help {
   color: var(--error);
@@ -368,7 +356,7 @@ small {
   box-shadow: inset 0 0 0 2px var(--error);
   outline: 0;
 }
-/* End Form styles */
+
 /* fin Main */
 
 /* Modal Contraseña olvidada */
