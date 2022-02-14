@@ -29,13 +29,13 @@ $('.field__input').on('input', function() {
 
 // Select2
 
-$(".select2").select2({
-  theme: 'bootstrap4',
-});
-
-$(".select2-multiple").select2({
-  theme: 'bootstrap4',
-});
+// $(".select2").select2({
+//   theme: 'bootstrap4',
+// });
+//
+// $(".select2-multiple").select2({
+//   theme: 'bootstrap4',
+// });
 
 // End select2
 
