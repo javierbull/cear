@@ -256,11 +256,11 @@ small {
 }
 
 .field-icon {
-  background-color: var(--g-03);
+  background-color: var(--b-01);
   cursor: pointer;
   float: right;
   margin-left: -2rem;
-  margin-top: -1.5rem;
+  margin-top: -2.2rem;
   margin-right: 1rem;
   position: relative;
   z-index: 2;
@@ -312,7 +312,7 @@ small {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--error);
+  color: var(--a-01);
   background-color: var(--b-01);
   background-clip: padding-box;
   border: 1px solid var(--g-02);
@@ -323,51 +323,15 @@ small {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.form-control:hover {
+  box-shadow: 0px 4px 8px rgba(45, 45, 45, 0.16);
+}
+
 /* fin form login */
 
 /* Floating labels */
-/* .field-floating-label {
-  position: relative;
-  margin-bottom: 1rem;
-}
-.field__label {
-  color: var(--g-01);
-  box-sizing: border-box;
-  display: block;
-  font-size: 1rem;
-  line-height: 1;
-  opacity: 0;
-  overflow: hidden;
-  padding: 1rem;
-  pointer-events: none;
-  position: absolute;
-  text-overflow: ellipsis;
-  top: 0;
-  text-align: left;
-  transform: translateY(3px);
-  transition: all 0.2s ease-out;
-  user-select: none;
-  white-space: nowrap;
-  width: 100%;
-  z-index: 1;
-}
-.field--not-empty .field__label {
-  opacity: 1;
-  transform: none;
-}
-.field__input {
-  background-color: var(--g-03);
-  border: 2px solid #e9e9e9;
-  color: var(--n-01);
-  font-size: 1em;
-  padding: 1rem;
-  transition: all 0.2s ease-out;
-  width: 100%;
-  border-radius: .25rem;
-}
-.field__input:hover {
-  background-color: var(--c-02);
-}
+
+
 .field__input:focus {
   box-shadow: inset 0 0 0 2px var(--a-02);
   outline: 0;
