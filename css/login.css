@@ -145,8 +145,9 @@ small {
 }
 
 .primary-button:focus {
-  background-color: var(--c-01);
-  color: var(--n-01);
+  background-color: var(--b-01);
+  color: var(--a-01);
+  border-color: 1px solid var(--green);
 }
 
 .primary-button.disabled {
@@ -264,6 +265,7 @@ small {
   margin-right: 1rem;
   position: relative;
   z-index: 2;
+  color: var(--a-01);
 }
 
 .form-login .logo {
