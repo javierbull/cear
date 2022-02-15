@@ -27,9 +27,13 @@ html {
 }
 
 body {
-  color: var(--n-01);
+  color: var(--a-01);
   font-family: 'Roboto', sans-serif;
   line-height: 1.5rem;
+}
+
+main {
+  min-height: calc(100vh - 82px);
 }
 
 h1 {
@@ -58,6 +62,12 @@ small {
 }
 
 /*End Font weight */
+
+/* bg colors */
+.bg-cear {
+  background-color: var(--c-02);
+}
+/* end bg colors */
 
 /* Margins */
 .marginBottom-0-5 {
@@ -98,6 +108,20 @@ small {
 }
 
 /* End Margins */
+
+/* Paddings */
+.paddingTop-1 {
+  padding-top: 1rem;
+}
+
+.paddingTop-2 {
+  padding-top: 2rem;
+}
+
+.paddingTop-3 {
+  padding-top: 3rem;
+}
+/* End Paddings */
 
 /* Buttons */
 .btn {
@@ -642,5 +666,12 @@ small {
 
 .navbar-cear .btn-user .material-icons {
   margin-left: 1rem;
+}
+
+.content-disclaimer {
+  max-width: 640px;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* END DISCLAIMER */
