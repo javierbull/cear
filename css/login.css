@@ -640,7 +640,7 @@ small {
   font-weight: 400;
 }
 
-.navbar-cear .btn-user span {
+.navbar-cear .btn-user .material-icons {
   margin-left: 1rem;
 }
 /* END DISCLAIMER */

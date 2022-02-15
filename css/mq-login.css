@@ -68,6 +68,10 @@
     /* background-color: pink; */
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .navbar-cear .btn-user .user-name {
+    display: none;
+  }
 }
 
 /* Fin cell portrait */
