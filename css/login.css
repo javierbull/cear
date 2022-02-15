@@ -240,7 +240,9 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--a-01)
+  color: var(--a-01);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .form-login {
