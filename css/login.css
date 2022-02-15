@@ -27,7 +27,7 @@ html {
 
 body {
   color: var(--n-01);
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5rem;
 }
 
@@ -47,12 +47,13 @@ small {
 }
 
 /* Font weight */
-.fw-eb {
-  font-weight: 800;
-}
 
 .fw-sb {
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.fw-b {
+  font-weight: 700;
 }
 
 /*End Font weight */
@@ -227,11 +228,6 @@ small {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 /* Fin img login */
@@ -244,11 +240,15 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--a-01)
 }
 
 .form-login {
-  /* background-color: pink; */
+  background-color: var(--b-01);
   min-width: 480px;
+  padding: 3.5rem;
+  border-radius: .25rem;
+  box-shadow: 0px 4px 8px rgba(45, 45, 45, 0.16);
 }
 
 .form-title {
@@ -270,11 +270,10 @@ small {
 
 .form-login .logo {
   /* background-color: lavender; */
-  width: 150px;
+  width: 430px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: .5rem;
-  display: none;
+  margin-bottom: 1.5rem;
 }
 
 .form-login .logo img {
