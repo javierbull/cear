@@ -7,6 +7,7 @@
   --b-01: #FFFFFF;
   --a-01: #114357;
   --a-02: #286781;
+  --a-03:#4DADBC;
   --c-01: #C5DADE;
   --c-02: #E6EEEF;
   --error: #C60D0D;
@@ -288,24 +289,6 @@ small {
 
 .form-label {
   color: var(--a-01);
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control {
@@ -630,7 +613,34 @@ small {
   margin-right: .5rem;
 }
 /* Fin grid cards abogados */
-#content-resumen {
-  display: none;
-}
+
 /* FIN SISTEMA ALEATORIO */
+
+/* DISCLAIMER */
+.navbar-cear {
+  background-color: var(--a-03);
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.navbar-brand img {
+  height: 3rem;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.navbar-cear .btn-user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  color: var(--b-01);
+  font-weight: 400;
+}
+
+.navbar-cear .btn-user span {
+  margin-left: 1rem;
+}
+/* END DISCLAIMER */
