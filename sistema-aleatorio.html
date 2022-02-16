@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Sistema Aleatorio</title>
+	<title>Procedimiento de Designación Aleatorio</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +14,6 @@
 	<script src="js/plugin/webfont/webfont.min.js"></script>
 	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
 	<!-- CSS Files -->
-	<link rel="stylesheet" type="text/css" href="js/plugin/datatables/datatables.css" />
-	<link rel="stylesheet" type="text/css" href="js/plugin/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
-	<link href="js/plugin/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-	<link href="js/plugin/timepicker/jquery.timepicker.css" rel="stylesheet" media="all">
-	<link rel="stylesheet" href="js/plugin/select2/select2.css">
-	<link rel="stylesheet" href="js/plugin/select2/select2-bootstrap4.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/login.css">
@@ -28,330 +22,77 @@
 </head>
 
 <body>
-	<header class="marginBottom-1-5">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="btn-group ml-auto">
-				<button type="button" class="btn btn-icon light-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Nombre usuario
-					<span class="material-icons">
-						account_circle
-					</span>
-				</button>
-				<div class="dropdown-menu dropdown-menu-right">
-					<button class="dropdown-item" type="button">Cerrar sesión</button>
+	<header>
+		<nav class="navbar navbar-light navbar-cear">
+			<div class="container-fluid container-mobile">
+				<a class="navbar-brand" href="#">
+					<img src="img/logos/logo-cear-negativo.png" alt="">
+				</a>
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle btn-user" data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="user-name">
+							Nombre Usuario
+						</span>
+						<span class="material-icons">
+							account_circle
+						</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+
+					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
-		<div class="container container-mobile" id="content-sorteo">
+	<main class="bg-cear">
+		<div class="container container-mobile paddingTop-3">
 			<div class="row">
-				<div class="col">
-					<h1 class="text-center fw-b marginBottom-2">
+				<div class="col-12">
+					<h1 class="text-center fw-b marginBottom-0-5">
 						Nuevo sorteo
 					</h1>
+					<div class="d-flex justify-content-center marginBottom-2-5">
+						<button type="button" class="btn link-button"  data-bs-toggle="modal" data-bs-target="#modalInstrucciones">
+							Ver instrucciones
+						</button>
+					</div>
 				</div>
-			</div>
-
-			<div class="row">
-				<ul class="nav nav-pills nav-pills-stepper col-xl-6 marginBottom-2-5 pr-0" id="pills-tab" role="tablist">
-					<li class="nav-item col-4">
-						<a class="nav-link active" id="pills-especialidad-tab" data-toggle="pill" href="#pills-especialidad" role="tab" aria-controls="pills-especialidad" aria-selected="true">
+				<ul class="nav nav-pills nav-pills-stepper col-xl-6 marginBottom-2-5" id="pills-tab" role="tablist">
+					<li class="nav-item col-4" role="presentation">
+						<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
 							<div class="step-position">
 								1
 							</div>
 							Selecciona una especialidad
-						</a>
+						</button>
 					</li>
-					<li class="nav-item col-4">
-						<a class="nav-link completed-" id="pills-sorteo-tab" data-toggle="pill" href="#pills-sorteo" role="tab" aria-controls="pills-sorteo" aria-selected="false">
+					<li class="nav-item col-4" role="presentation">
+						<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
 							<div class="step-position">
 								2
 							</div>
 							Sortea al árbitro
-						</a>
+						</button>
 					</li>
-					<li class="nav-item col-4">
-						<a class="nav-link" id="pills-registro-tab" data-toggle="pill" href="#pills-registro" role="tab" aria-controls="pills-registro" aria-selected="false">
+					<li class="nav-item col-4" role="presentation">
+						<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
 							<div class="step-position">
 								3
 							</div>
 							Registra los resultados
-						</a>
+						</button>
 					</li>
 				</ul>
-				<div class="tab-content tab-content-stepper col-12" id="pills-tabContent">
-					<div class="tab-pane fade show active" id="pills-especialidad" role="tabpanel" aria-labelledby="pills-especialidad-tab">
-
-						<div class="row">
-							<div class="field-floating-label col-xl-6 mx-auto marginBottom-3-5">
-								<label class="field__label" for="inputCategory">Especialidad</label>
-								<select id="inputCategory" class="field__input one-column-form__input--text">
-									<option selected>Seleccione</option>
-									<option>Contratación pública</option>
-									<option>Arbitraje de emergencia</option>
-								</select>
-								<small class="text-help">Campo obligatorio</small>
-							</div>
-						</div>
-
-						<div class="footer-stepper">
-							<button type="button" name="button" class="btn btn-large primary-button">
-								Continuar
-							</button>
-						</div>
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						home
 					</div>
-					<div class="tab-pane fade" id="pills-sorteo" role="tabpanel" aria-labelledby="pills-sorteo-tab">
-						<div class="row">
-							<div class="field-floating-label col-xl-6 mx-auto marginBottom-3-5">
-								<label class="field__label" for="inputCategory">Especialidad</label>
-								<select id="inputCategory" class="field__input one-column-form__input--text">
-									<option>Seleccione</option>
-									<option selected>Contratación pública</option>
-									<option>Arbitraje de emergencia</option>
-								</select>
-								<small class="text-help">Campo obligatorio</small>
-							</div>
-						</div>
-						<div class="grid-container-abogados marginBottom-3-5">
-							<div class="item card-lawyer disponible">
-								<div class="user-img">
-									<img src="img/avatars/user1.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										Raúl Osorio
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											Disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer ocupado">
-								<div class="user-img">
-									<img src="img/avatars/user2.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										María Torres
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											No disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer disponible">
-								<div class="user-img">
-									<img src="img/avatars/user1.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										Raúl Osorio
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											Disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer ocupado">
-								<div class="user-img">
-									<img src="img/avatars/user2.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										María Torres
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											No disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer disponible">
-								<div class="user-img">
-									<img src="img/avatars/user1.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										Raúl Osorio
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											Disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer ocupado">
-								<div class="user-img">
-									<img src="img/avatars/user2.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										María Torres
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											No disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer disponible">
-								<div class="user-img">
-									<img src="img/avatars/user1.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										Raúl Osorio
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											Disponible
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="item card-lawyer ocupado">
-								<div class="user-img">
-									<img src="img/avatars/user2.png" alt="">
-								</div>
-								<div class="info-user">
-									<div class="name-lawyer">
-										María Torres
-									</div>
-									<div class="status-user">
-										<span class="indicator">
-										</span>
-										<span>
-											No disponible
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="footer-stepper">
-							<button type="button" name="button" class="btn btn-large primary-button" data-toggle="modal" data-target="#modalArbitroElegido">
-								Sortear
-							</button>
-						</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						profile
 					</div>
-					<div class="tab-pane fade" id="pills-registro" role="tabpanel" aria-labelledby="pills-registro-tab">
-						<H1 class="fw-sb text-center marginBottom-2">Sorteo de Contratación Pública</H1>
-						<div class="row">
-								<div class="col-xl-6 mx-auto">
-									<h2 class="mb-0-5 fw-sb">Árbitro seleccionado</h2>
-									<div class="card-lawyer-elected">
-										<div class="info-lawyer">
-											<div class="name-lawyer">
-												Raúl Osorio
-											</div>
-											<div class="cal-lawyer">
-												CAL: 4687
-											</div>
-										</div>
-										<div class="user-img">
-											<img src="img/avatars/user1.png" alt="">
-										</div>
-									</div>
-									<p class="marginBottom-0-5">Especialidades</p>
-									<div class="wrap-especialidades marginBottom-2">
-										<div class="card-especialidad">
-											<div class="especialidad">
-												Arbitraje:
-											</div>
-											<span class="material-icons">
-												check_circle
-											</span>
-										</div>
-										<div class="card-especialidad">
-											<div class="especialidad">
-												Contratación con el Estado:
-											</div>
-											<span class="material-icons">
-												check_circle
-											</span>
-										</div>
-										<div class="card-especialidad">
-											<div class="especialidad">
-												Derecho administrativo:
-											</div>
-											<span class="material-icons">
-												check_circle
-											</span>
-										</div>
-									</div>
-									<h2 class="mb-0-5 fw-sb">Registra el caso</h2>
-									<div class="field-floating-label marginBottom-2">
-										<label class="field__label" for="input-caso">Nombre del caso</label>
-										<input class="field__input one-column-form__input--text" id="input-caso" type="text" placeholder="Nombre del caso">
-										<small class="text-help">Campo obligatorio</small>
-									</div>
-								</div>
-							</div>
-						<div class="footer-stepper">
-							<button type="button" name="button" class="btn btn-large primary-button" data-toggle="modal" data-target="#modalRegistrarCaso">
-								Registrar caso
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container container-mobile" id="content-resumen">
-			<div class="row">
-				<div class="col-12">
-					<h1 class="text-center fw-b marginBottom-2">
-						Has registrado el caso:
-					</h1>
-					<h2 class="text-center fw-sb marginBottom-2">
-						Nombre del caso
-					</h2>
-				</div>
-				<div class="col-xl-6 mx-auto">
-					<h2 class="mb-0-5 fw-sb">Árbitro seleccionado</h2>
-					<div class="card-lawyer-elected marginBottom-2">
-						<div class="info-lawyer">
-							<div class="name-lawyer">
-								Raúl Osorio
-							</div>
-							<div class="cal-lawyer">
-								CAL: 4687
-							</div>
-						</div>
-						<div class="user-img">
-							<img src="img/avatars/user1.png" alt="">
-						</div>
-					</div>
-					<div class="footer-stepper">
-						<button type="button" name="button" class="btn btn-large primary-button marginBottom-0-5" id="show-sorteo">
-							Seguir sorteando
-						</button>
-						<button type="button" name="button" class="btn link-button">
-							Cancelar
-						</button>
+					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+						contact
 					</div>
 				</div>
 			</div>
@@ -362,64 +103,33 @@
 
 
 	<!-- Modal -->
-
-	<div class="modal fade modalInfo" id="modalArbitroElegido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<!-- <span aria-hidden="true">&times;</span> -->
-						<span class="material-icons">
-							close
-						</span>
-					</button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="modal-body text-left">
-					<h1 class="modal-title marginBottom-1-5 text-center">El árbitro elegido es:</h1>
-					<div class="card-lawyer-elected">
-						<div class="info-lawyer">
-							<div class="name-lawyer">
-								Raúl Osorio
-							</div>
-							<div class="cal-lawyer">
-								CAL: 4687
-							</div>
-						</div>
-						<div class="user-img">
-							<img src="img/avatars/user1.png" alt="">
-						</div>
-					</div>
-					<p class="marginBottom-0-5">Especialidades</p>
-					<div class="card-especialidad">
-						<div class="especialidad">
-							Arbitraje:
-						</div>
-						<span class="material-icons">
-							check_circle
-						</span>
-					</div>
-					<div class="card-especialidad">
-						<div class="especialidad">
-							Contratación con el Estado:
-						</div>
-						<span class="material-icons">
-							check_circle
-						</span>
-					</div>
-					<div class="card-especialidad">
-						<div class="especialidad">
-							Derecho administrativo:
-						</div>
-						<span class="material-icons">
-							check_circle
-						</span>
+				<div class="modal-body">
+					<h1 class="modal-title marginBottom-1-5 text-center">Recuperación de contraseña</h1>
+					<p class="text-center">
+						Ingresa tu usuario para solicitar la recuperación de tu contraseña:
+					</p>
+					<div class="marginBottom-1">
+						<label for="inputUser" class="form-label">Usuario</label>
+						<input type="text" class="form-control" id="inputUser">
+						<small class="text-help">
+							<span class="material-icons">
+								report_problem
+							</span>
+							El usuario es incorrecto
+						</small>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn primary-button btn-large" data-dismiss="modal">
-						Aceptar
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Solicitar recuperación
 					</button>
-					<button type="button" class="btn link-button" data-dismiss="modal">
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cancelar
 					</button>
 				</div>
@@ -427,26 +137,35 @@
 		</div>
 	</div>
 
-	<div class="modal fade modalInfo" id="modalRegistrarCaso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modalInfo" id="modalInstrucciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<!-- <span aria-hidden="true">&times;</span> -->
-						<span class="material-icons">
-							close
-						</span>
-					</button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<h1 class="modal-title marginBottom-1-5 text-center">Estás registrando el caso:</h1>
-					<h2 class="fw-sb">Nombre del caso</h2>
+					<h1 class="modal-title marginBottom-1-5 text-center">Procedimiento de Designación Aleatorio</h1>
+					<p>
+						El Secretario General o Adjunto deberá realizar entre uno (1) o un máximo de tres (3) pruebas, explicando el procedimiento de designación de árbitros.
+					</p>
+					<p>
+						Una vez realizado las pruebas se dará inicio al procedimiento de designación, previamente se actualizará el sistema, y se deberá grabar el acto mediante cámara de video o grabado a través de un aplicativo que se guardará en la nube.
+					</p>
+					<p>
+						La designación del árbitro u árbitros que corresponda (árbitro de parte, árbitro único o presidente de tribunal arbitral), será un titular y un suplente, ambos deben cumplir los requisitos exigidos por la ley de la materia o lo que hayan pactado las partes en el convenio arbitral o lo que establezcan los reglamentos de CEAR LATINOAMERICANO.
+					</p>
+					<p>
+						Luego el Secretario General o Adjunto, elaborará el Acta de designación dejando constancia, en caso haya(n) participado o en su defecto, se le(s) notificará a la parte(s) inasistente(s) con el contenido de dicha Acta, para los fines correspondientes.
+					</p>
+					<p>
+						Por último, el Secretario General notificará en el día al ábitro u árbitros designado(s). El árbitro u árbitros tiene(n) tres (3) días hábiles para aceptar o declinar.
+					</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn primary-button btn-large" id="show-resumen" data-dismiss="modal">
-						Confirmar
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Aceptar
 					</button>
-					<button type="button" class="btn link-button" data-dismiss="modal">
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cancelar
 					</button>
 				</div>
@@ -458,15 +177,10 @@
 	<!--   Bootstrap JS Files   -->
 	<script src="js/bootstrap/jquery.3.2.1.min.js"></script>
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<!-- <script src="js/bootstrap/popper.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script> -->
 
-	<script type="text/javascript" src="js/plugin/datatables/datatables.min.js"></script>
-
-	<script src="js/plugin/datepicker/moment.js"></script>
-	<script src="js/plugin/datepicker/daterangepicker.js"></script>
-	<script src="js/plugin/timepicker/jquery.timepicker.js"></script>
-	<script src="js/plugin/select2/select2.js"></script>
-
-
+	<!-- <script src="js/main.js"></script> -->
 	<script src="js/login.js"></script>
 
 </body>
