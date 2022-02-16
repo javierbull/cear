@@ -495,14 +495,12 @@ small {
 /* Stepper tabs */
 .nav-pills-stepper {
   /* background-color: pink; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 0;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .nav-pills-stepper .nav-item {
   /* background-color: yellow; */
-
 }
 
 .nav-pills-stepper .nav-link {
