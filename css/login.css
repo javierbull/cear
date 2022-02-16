@@ -315,7 +315,7 @@ small {
   color: var(--a-01);
 }
 
-.form-control {
+.form-control, .form-select {
   display: block;
   width: 100%;
   padding: 1rem;
@@ -362,7 +362,7 @@ small {
   margin-right: .5rem;
 }
 
-.error-input .form-control {
+.error-input .form-control, .error-input .form-select {
   box-shadow: inset 0 0 0 2px var(--error);
   outline: 0;
   color: var(--error);
