@@ -513,6 +513,7 @@ small {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-bottom: 1rem;
 }
 
 .step-position {
@@ -533,13 +534,13 @@ small {
 
 .nav-pills-stepper .nav-link.active,
 .nav-pills-stepper .show > .nav-link {
-  color: var(--a-01);
+  color: var(--a-02);
   background-color: var(--c-02);
   border-bottom: solid 2px var(--a-01);
 }
 
 .nav-pills-stepper .nav-link.active .step-position {
-  background-color: var(--a-01);
+  background-color: var(--a-02);
 }
 
 .nav-pills .nav-link {
