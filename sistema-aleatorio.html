@@ -248,7 +248,7 @@
 								Finalizar sorteo
 							</button>
 						</div>
-						<div class="content-chosen">
+						<div class="content-chosen" id="content-chosen">
 							<div class="grid-container-abogados marginBottom-3-5">
 								<div class="item card-lawyer card-lawyer-selected">
 
@@ -272,7 +272,11 @@
 											</span>
 										</button>
 										<ul class="dropdown-menu">
-											<li><button class="dropdown-item" type="button">Eliminar abogado</button></li>
+											<li>
+												<button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarArbitro">
+													Eliminar abogado
+												</button>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -394,6 +398,43 @@
 				<div class="modal-footer">
 					<button type="button" class="btn primary-button btn-large" data-bs-dismiss="modal">
 						Agregar árbitro
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarArbitro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-left">
+					<h1 class="modal-title marginBottom-1-5 text-center">Estás eliminando al árbitro:</h1>
+					<div class="card-lawyer-elected">
+						<div class="info-lawyer">
+							<div class="name-lawyer">
+								Raúl Osorio
+							</div>
+							<div class="cal-lawyer">
+								CAL: 4687
+							</div>
+							<button type="button" class="btn link-button">
+								Desvargar CV
+							</button>
+						</div>
+						<div class="user-img">
+							<img src="img/avatars/user1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn primary-button btn-large" data-bs-dismiss="modal">
+						Eliminar árbitro
 					</button>
 					<button type="button" class="btn link-button" data-bs-dismiss="modal">
 						Cancelar
