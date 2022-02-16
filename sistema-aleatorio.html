@@ -242,7 +242,7 @@
 							</div>
 						</div>
 						<div class="footer-stepper">
-							<button type="button" name="button" class="btn btn-large primary-button">
+							<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalArbitroElegido">
 								Sortear
 							</button>
 						</div>
@@ -259,40 +259,6 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<h1 class="modal-title marginBottom-1-5 text-center">Recuperación de contraseña</h1>
-					<p class="text-center">
-						Ingresa tu usuario para solicitar la recuperación de tu contraseña:
-					</p>
-					<div class="marginBottom-1">
-						<label for="inputUser" class="form-label">Usuario</label>
-						<input type="text" class="form-control" id="inputUser">
-						<small class="text-help">
-							<span class="material-icons">
-								report_problem
-							</span>
-							El usuario es incorrecto
-						</small>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
-						Solicitar recuperación
-					</button>
-					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
-						Cancelar
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<div class="modal fade modalInfo" id="modalInstrucciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
@@ -328,6 +294,83 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade modalInfo" id="modalArbitroElegido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-left">
+					<h1 class="modal-title marginBottom-1-5 text-center">El árbitro elegido es:</h1>
+					<div class="card-lawyer-elected">
+						<div class="info-lawyer">
+							<div class="name-lawyer">
+								Raúl Osorio
+							</div>
+							<div class="cal-lawyer">
+								CAL: 4687
+							</div>
+							<button type="button" class="btn link-button">
+								Desvargar CV
+							</button>
+						</div>
+						<div class="user-img">
+							<img src="img/avatars/user1.png" alt="">
+						</div>
+					</div>
+					<p class="marginBottom-0-5">Tipo de árbitro</p>
+					<div class="card-especialidad">
+						<div class="tipo-arbitro">
+							Árbitro Único / Presidente
+						</div>
+					</div>
+					<p class="marginBottom-0-5">Especialidades</p>
+					<div class="card-especialidad">
+						<div class="especialidad">
+							RNA-OSCE:
+						</div>
+						<span class="material-icons">
+							check_circle
+						</span>
+					</div>
+					<div class="card-especialidad">
+						<div class="especialidad">
+							Arbitraje:
+						</div>
+						<span class="material-icons">
+							check_circle
+						</span>
+					</div>
+					<div class="card-especialidad">
+						<div class="especialidad">
+							Contratación con el Estado:
+						</div>
+						<span class="material-icons">
+							check_circle
+						</span>
+					</div>
+					<div class="card-especialidad">
+						<div class="especialidad">
+							Derecho administrativo:
+						</div>
+						<span class="material-icons">
+							check_circle
+						</span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn primary-button btn-large" data-bs-dismiss="modal">
+						Aceptar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Fin Modals -->
 
 	<!--   Bootstrap JS Files   -->
