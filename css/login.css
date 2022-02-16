@@ -601,6 +601,14 @@ small {
   align-items: center;
 }
 
+.card-lawyer.selected {
+  background-color: var(--b-01);
+}
+
+.card-lawyer.selected .info-user .name-lawyer {
+  color: var(--a-02);
+}
+
 .card-lawyer .user-img {
   height: 2.5rem;
   width: 2.5rem;
@@ -623,7 +631,38 @@ small {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.content-card-lawyer-selected {
+  display: flex;
+  align-items: center;
+}
+
+.card-lawyer-selected {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--b-01);
+  border: 1px solid var(--a-02);
+}
+
+.content-card-lawyer-selected .info-user .name-lawyer {
+  color: var(--a-02);
+}
+
+.content-card-lawyer-selected .info-user .type-lawyer {
+  color: var(--a-02);
+}
+
+.card-lawyer-selected .btn {
+  color: var(--a-02);
+  display: flex;
+  align-items: center;
+}
 /* Fin grid cards abogados */
+
+.content-chosen {
+  border-top: 1px solid var(--a-02);
+  padding-top: 2rem;
+}
 
 /* FIN SISTEMA ALEATORIO */
 
