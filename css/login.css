@@ -594,30 +594,11 @@ small {
 }
 
 .card-lawyer {
+  background-color: var(--a-03);
   border-radius: .25rem;
   padding: .5rem;
   display: flex;
   align-items: center;
-}
-
-.card-lawyer.disponible {
-  background-color: var(--c-01);
-}
-
-.card-lawyer.disponible .indicator {
-  background-color: var(--success);
-}
-
-.card-lawyer.ocupado {
-  background-color: var(--g-03);
-}
-
-.card-lawyer.ocupado .indicator {
-  background-color: var(--error);
-}
-
-.card-lawyer.ocupado .info-user {
-  color: var(--g-02);
 }
 
 .card-lawyer .user-img {
@@ -635,24 +616,12 @@ small {
 }
 
 .card-lawyer .info-user .name-lawyer {
+  color: var(--g-03);
   font-weight: 600;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.card-lawyer .status-user {
-  display: flex;
-  align-items: center;
-}
-
-.card-lawyer .status-user .indicator {
-  display: block;
-  height: .5rem;
-  width: .5rem;
-  border-radius: 50%;
-  margin-right: .5rem;
 }
 /* Fin grid cards abogados */
 
