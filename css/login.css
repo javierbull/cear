@@ -709,3 +709,7 @@ small {
   margin-right: auto;
 }
 /* END DISCLAIMER */
+
+#content-resumen {
+  display: none;
+}

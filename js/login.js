@@ -15,18 +15,6 @@ $(document).ready(function(){
 });
 // END SHOW-HIDE PASSWORD
 
-// floating label
-$('.field__input').on('input', function() {
-  var $field = $(this).closest('.field-floating-label');
-  if (this.value) {
-    $field.addClass('field--not-empty');
-  } else {
-    $field.removeClass('field--not-empty');
-  }
-});
-
-// End floating label
-
 // Select2
 
 // $(".select2").select2({

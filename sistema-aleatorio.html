@@ -45,7 +45,7 @@
 		</nav>
 	</header>
 	<main class="bg-cear">
-		<div class="container container-mobile paddingTop-3">
+		<div class="container container-mobile paddingTop-3" id="content-sorteo">
 			<div class="row">
 				<div class="col-12">
 					<h1 class="text-center fw-b marginBottom-0-5">
@@ -355,6 +355,46 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="container container-mobile" id="content-resumen">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-center fw-b marginBottom-2">
+						Has registrado el caso:
+					</h1>
+					<h2 class="text-center fw-sb marginBottom-2">
+						Nombre del caso
+					</h2>
+				</div>
+				<div class="col-xl-6 mx-auto">
+					<h2 class="mb-0-5 fw-sb">Árbitro seleccionado</h2>
+					<div class="card-lawyer-elected bg-light marginBottom-2">
+						<div class="info-lawyer">
+							<div class="name-lawyer">
+								Raúl Osorio
+							</div>
+							<div class="cal-lawyer">
+								CAL: 4687
+							</div>
+							<button type="button" class="btn link-button">
+								Desvargar CV
+							</button>
+						</div>
+						<div class="user-img">
+							<img src="img/avatars/user1.png" alt="">
+						</div>
+					</div>
+					<div class="footer-stepper">
+						<button type="button" name="button" class="btn btn-large primary-button marginBottom-0-5" id="show-sorteo">
+							Realizar nuevo sorteo
+						</button>
+						<button type="button" name="button" class="btn link-button">
+							cerrar sesión
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<!-- Modals -->
@@ -521,7 +561,7 @@
 					<h1 class="modal-title marginBottom-1-5 text-center">Nombre del caso</h1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn primary-button btn-large" data-bs-dismiss="modal">
+					<button type="button" class="btn primary-button btn-large" data-bs-dismiss="modal" id="show-resumen">
 						Confirmar
 					</button>
 					<button type="button" class="btn link-button" data-bs-dismiss="modal">
