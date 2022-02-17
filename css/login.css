@@ -67,6 +67,10 @@ small {
 .bg-cear {
   background-color: var(--c-02);
 }
+
+.bg-light{
+  background-color: var(--b-01) !important;
+}
 /* end bg colors */
 
 /* Margins */
