@@ -623,6 +623,8 @@ small {
 }
 
 .card-lawyer .user-img {
+  min-height: 2.5rem;
+  min-width: 2.5rem;
   max-height: 2.5rem;
   max-width: 2.5rem;
   border-radius: 50%;
