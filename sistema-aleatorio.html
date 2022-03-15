@@ -47,7 +47,7 @@
 	<main class="bg-cear">
 		<div class="container container-mobile paddingTop-3" id="content-sorteo">
 			<div class="row">
-				<div class="col-12">
+				<!-- <div class="col-12">
 					<h1 class="text-center fw-b marginBottom-0-5">
 						Nuevo sorteo
 					</h1>
@@ -56,7 +56,7 @@
 							Ver instrucciones
 						</button>
 					</div>
-				</div>
+				</div> -->
 				<ul class="nav nav-pills nav-pills-stepper marginBottom-1" id="pills-especialidad-tab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<button class="nav-link active" id="pills-especialidad-tab" data-bs-toggle="pill" data-bs-target="#pills-especialidad" type="button" role="tab" aria-controls="pills-especialidad" aria-selected="true">
@@ -87,7 +87,7 @@
 
 						<div class="content-case-controls marginBottom-2">
 							<div class="col-xl-4">
-								<div class="input-group- search-input">
+								<div class="search-input">
 									<input type="text" class="form-control" placeholder="Buscar casos" aria-label="Recipient's username" aria-describedby="button-addon2">
 									<button class="btn material-icons-outlined" type="button">
 										search
@@ -105,6 +105,68 @@
 								Registrar nuevo caso
 							</button>
 						</div>
+
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">ID Caso</th>
+									<th scope="col">Tipo de contratación</th>
+									<th scope="col">Sorteo 1</th>
+									<th scope="col">Sorteo 2</th>
+									<th scope="col">Sorteo 3</th>
+									<th scope="col">Sorteo 4</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">2022-0192</th>
+									<td>Contratación Pública</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>-</td>
+									<td>-</td>
+									<td>En proceso</td>
+									<td>
+										<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalArbitroElegido">
+											Continuar
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2022-0192</th>
+									<td>Contratación Pública</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>-</td>
+									<td>-</td>
+									<td>En proceso</td>
+									<td>
+										<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalArbitroElegido">
+											Continuar
+										</button>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
 
 						<div class="footer-stepper">
 							<button type="button" name="button" class="btn btn-large primary-button">

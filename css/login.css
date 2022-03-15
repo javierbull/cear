@@ -56,6 +56,12 @@ small {
   line-height: 1rem;
 }
 
+/* Colors */
+.success-color {
+  color: var(--success);
+}
+/* End colors */
+
 /* Font weight */
 
 .fw-sb {
@@ -182,7 +188,7 @@ small {
 .primary-button:focus {
   background-color: var(--b-01);
   color: var(--a-01);
-  border-color: 1px solid var(--green);
+  border-color: 1px solid var(--success);
 }
 
 .primary-button.disabled {
@@ -399,6 +405,27 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.table {
+  background-color: var(--b-01);
+}
+
+.table > :not(:first-child) {
+  /* border-top: 2px solid currentColor; */
+  border-top: none;
+}
+
+.table thead tr th {
+  background-color: var(--g-03);
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.table tbody th, .table tbody td, .table thead th {
+  /* background-color: pink; */
+  vertical-align: middle;
+  padding: .5rem 1rem;
 }
 
 /* fin Main */
