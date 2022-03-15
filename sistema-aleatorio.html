@@ -57,40 +57,40 @@
 						</button>
 					</div>
 				</div>
-				<ul class="nav nav-pills nav-pills-stepper col-xl-6 marginBottom-2-5 mx-auto" id="pills-especialidad-tab" role="tablist">
-					<li class="nav-item col-4" role="presentation">
+				<ul class="nav nav-pills nav-pills-stepper marginBottom-2-5" id="pills-especialidad-tab" role="tablist">
+					<li class="nav-item" role="presentation">
 						<button class="nav-link active" id="pills-especialidad-tab" data-bs-toggle="pill" data-bs-target="#pills-especialidad" type="button" role="tab" aria-controls="pills-especialidad" aria-selected="true">
 							<div class="step-position">
 								1
 							</div>
-							Selecciona una especialidad
 						</button>
 					</li>
-					<li class="nav-item col-4" role="presentation">
+					<li class="nav-item" role="presentation">
 						<button class="nav-link" id="pills-sorteo-tab" data-bs-toggle="pill" data-bs-target="#pills-sorteo" type="button" role="tab" aria-controls="pills-sorteo" aria-selected="false">
 							<div class="step-position">
 								2
 							</div>
-							Sortea al árbitro
 						</button>
 					</li>
-					<li class="nav-item col-4" role="presentation">
+					<li class="nav-item" role="presentation">
 						<button class="nav-link" id="pills-registro-tab" data-bs-toggle="pill" data-bs-target="#pills-registro" type="button" role="tab" aria-controls="pills-registro" aria-selected="false">
 							<div class="step-position">
 								3
 							</div>
-							Registra los resultados
 						</button>
 					</li>
 				</ul>
 				<div class="tab-content" id="pills-especialidad-tabContent">
 					<div class="tab-pane fade show active" id="pills-especialidad" role="tabpanel" aria-labelledby="pills-especialidad-tab">
-						<div class="error-input- col-xl-6 mx-auto marginBottom-2">
-							<select class="form-select form-control" aria-label="Default select example">
-								<option selected>Seleccione</option>
-								<option value="1">Contratación pública</option>
-								<option value="2">Arbitraje de emergencia</option>
-							</select>
+
+						<h2 class="text-center">Registro y selección de casos</h2>
+
+						<div class="col-xl-6 mx-auto marginBottom-2">
+							<div class="input-group">
+							<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary material-icons-outlined" type="button" id="button-addon2">
+								search
+							</button>
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
@@ -98,6 +98,8 @@
 								El usuario es incorrecto
 							</small>
 						</div>
+					  </div>
+
 						<div class="footer-stepper">
 							<button type="button" name="button" class="btn btn-large primary-button">
 								Continuar

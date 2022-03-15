@@ -503,13 +503,15 @@ small {
 /* SISTEMA ALEATORIO */
 /* Stepper tabs */
 .nav-pills-stepper {
-  /* background-color: pink; */
+  background-color: pink;
   padding-right: 12px;
   padding-left: 12px;
+  display: flex;
+  justify-content:center;
 }
 
 .nav-pills-stepper .nav-item {
-  /* background-color: yellow; */
+  background-color: yellow;
 }
 
 .nav-pills-stepper .nav-link {
@@ -536,7 +538,6 @@ small {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: .5rem;
   font-size: 1.5rem;
   font-weight: 800;
 }
