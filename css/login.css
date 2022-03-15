@@ -394,6 +394,13 @@ small {
   color: var(--error);
 }
 
+.content-case-controls {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* fin Main */
 
 /* Modal Contraseña olvidada */
@@ -621,6 +628,8 @@ small {
 }
 
 /* Fin stepper tab */
+
+
 
 /* Grid cards abogados */
 .grid-container-abogados {
