@@ -10,7 +10,7 @@
   --a-03:#4DADBC;
   --c-01: #C5DADE;
   --c-02: #E6EEEF;
-  --error: #C60D0D;
+  --error: #DF2020;
   --warning: #FFB700;
   --info: #1A58DD;
   --success: #06C170;
@@ -426,6 +426,21 @@ small {
   /* background-color: pink; */
   vertical-align: middle;
   padding: .5rem 1rem;
+}
+
+.tag-status {
+  /* background-color: lavender; */
+  display: flex;
+  align-items: center;
+}
+
+.status-danger {
+  background-color: var(--error);
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  margin-right: .5rem;
 }
 
 /* fin Main */
