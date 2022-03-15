@@ -584,6 +584,13 @@ small {
   /* background-color: lavender; */
 }
 
+.title-stepper {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
 .footer-stepper {
   display: flex;
   flex-direction: column;
