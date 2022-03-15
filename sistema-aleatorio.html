@@ -86,7 +86,7 @@
 						<h2 class="title-stepper">Registro y selección de casos</h2>
 
 						<div class="content-case-controls marginBottom-2">
-							<div class="col-xl-4">
+							<div class="col-xl-5">
 								<div class="search-input">
 									<input type="text" class="form-control" placeholder="Buscar casos" aria-label="Recipient's username" aria-describedby="button-addon2">
 									<button class="btn material-icons-outlined" type="button">
@@ -101,7 +101,7 @@
 								</div>
 							</div>
 
-							<button type="button" name="button" class="btn btn-large primary-button">
+							<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalInstrucciones">
 								Registrar nuevo caso
 							</button>
 						</div>
@@ -559,11 +559,11 @@
 
 	<!-- Modals -->
 	<!-- Modal -->
-	<div class="modal fade modalInfo" id="modalInstrucciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade modalInfo" id="modalInstrucciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 				</div>
 				<div class="modal-body">
 					<h1 class="modal-title marginBottom-1-5 text-center">Procedimiento de Designación Aleatorio</h1>
@@ -584,11 +584,8 @@
 					</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalNuevoCaso">
 						Aceptar
-					</button>
-					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
-						Cancelar
 					</button>
 				</div>
 			</div>
@@ -723,6 +720,50 @@
 						Confirmar
 					</button>
 					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalNuevoCaso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h1 class="modal-title marginBottom-1-5 text-center">Nuevo caso</h1>
+					<div class="marginBottom-1">
+						<label for="inputUser" class="form-label">Nombre del caso</label>
+						<input type="text" class="form-control" id="inputUser">
+						<small class="text-help">
+							<span class="material-icons">
+								report_problem
+							</span>
+							El usuario es incorrecto
+						</small>
+					</div>
+					<div class="error-input- marginBottom-1-5">
+						<select class="form-select form-control" aria-label="Default select example">
+							<option selected>Seleccione</option>
+							<option value="1">Contratación pública</option>
+							<option value="2">Arbitraje de emergencia</option>
+						</select>
+						<small class="text-help">
+							<span class="material-icons">
+								report_problem
+							</span>
+							El usuario es incorrecto
+						</small>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Crear caso
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cancelar
 					</button>
 				</div>
