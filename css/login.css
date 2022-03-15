@@ -352,6 +352,19 @@ small {
   color: var(--a-01);
 }
 
+.search-input {
+  position: relative;
+}
+
+.search-input .btn {
+  /* background-color: lavender; */
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: var(--a-02);
+}
 /* fin form login */
 
 
