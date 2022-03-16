@@ -515,6 +515,7 @@ small {
   .modal .form-group {
     text-align: left;
   }
+
 /* Fin modal contraseña olvidada */
 
 /* modal arbitro elegido */
@@ -565,6 +566,37 @@ small {
 }
 
 /* Fin modal arbitro elegido */
+
+/* Modal Caso creado */
+.content-icon-modal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+
+.content-icon-modal span {
+  font-size: 2rem;
+}
+
+.card-case {
+  background-color: var(--g-03);
+  border-radius: .25rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.name-case {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-case p {
+  font-size: 1.5rem;
+}
+
+
+/* Fin modal caso creado */
 
 /* SISTEMA ALEATORIO */
 /* Stepper tabs */

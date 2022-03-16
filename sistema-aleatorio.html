@@ -733,7 +733,7 @@
 				<div class="modal-header">
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body"
 					<h1 class="modal-title marginBottom-1-5 text-center">Nuevo caso</h1>
 					<div class="marginBottom-1">
 						<label for="inputUser" class="form-label">Nombre del caso</label>
@@ -760,11 +760,39 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalCasoCreado">
 						Crear caso
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalCasoCreado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-left">
+					<div class="content-icon-modal">
+						<span class="material-icons success-color">
+							check_circle
+						</span>
+					</div>
+					<h1 class="modal-title marginBottom-1-5 text-center">Se creó el caso:</h1>
+					<div class="card-case">
+						<h2 class="name-case">Caso Demo 01</h2>
+						<p>ID: 2022-0192</p>
+						<p>Contratación Pública</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cerrar
 					</button>
 				</div>
 			</div>
