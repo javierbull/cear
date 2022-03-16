@@ -595,7 +595,20 @@ small {
   font-size: 1.5rem;
 }
 
+.card-sorteo {
+  background-color: var(--g-03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  border-radius: .5rem;
+}
 
+.card-sorteo span {
+  color: var(--success);
+}
 /* Fin modal caso creado */
 
 /* SISTEMA ALEATORIO */
