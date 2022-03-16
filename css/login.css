@@ -847,6 +847,26 @@ small {
   font-weight: 600;
 }
 
+.hgroup-title-stepper {
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.hgroup-title-stepper .title-stepper {
+  margin-bottom: .5rem;
+}
+
+.subtitle-stepper {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.content-referee .referee-type {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
 /* FIN SISTEMA ALEATORIO */
 
 /* DISCLAIMER */
