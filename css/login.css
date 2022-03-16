@@ -839,6 +839,14 @@ small {
   margin-bottom: 1rem;
 }
 
+.case-info {
+  margin-bottom: 1.5rem;
+}
+
+.case-info .case-name {
+  font-weight: 600;
+}
+
 /* FIN SISTEMA ALEATORIO */
 
 /* DISCLAIMER */
