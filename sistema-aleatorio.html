@@ -523,98 +523,69 @@
 							<h3 class="subtitle-stepper">Sorteo 4</h3>
 						</hgroup>
 
-						<div class="content-case-controls marginBottom-2">
-							<div class="col-xl-5">
-								<div class="search-input">
-									<input type="text" class="form-control" placeholder="Buscar casos" aria-label="Recipient's username" aria-describedby="button-addon2">
-									<button class="btn material-icons-outlined" type="button">
-										search
-									</button>
+						<form class="col-lg-4 mx-auto">
+							<fieldset class="marginBottom-2">
+								<label for="inputEmailLawyer1" class="form-label">Árbitros</label>
+								<div class="marginBottom-0-5">
+									<input type="email" class="form-control" id="inputEmailLawyer1" value="arbitro1@gmail.com" disabled>
 									<small class="text-help">
 										<span class="material-icons">
 											report_problem
 										</span>
-										El usuario es incorrecto
+										El formato es incorrecto
 									</small>
 								</div>
+								<div class="marginBottom-0-5">
+									<input type="email" class="form-control" id="inputEmailLawyer2" value="arbitro2@gmail.com" disabled>
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										El formato es incorrecto
+									</small>
+								</div>
+							</fieldset>
+
+							<fieldset class="marginBottom-2">
+								<label for="inputEmailClient1" class="form-label">Clientes</label>
+								<div class="marginBottom-0-5">
+									<input type="email" class="form-control" id="inputEmailClient1" placeholder="Ingrese email">
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										El formato es incorrecto
+									</small>
+								</div>
+								<div class="marginBottom-0-5">
+									<input type="email" class="form-control" id="inputEmailClient2" placeholder="Ingrese email">
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										El formato es incorrecto
+									</small>
+								</div>
+							</fieldset>
+
+							<div class="marginBottom-2">
+								<label for="inputLinkExpediente" class="form-label">Enlace del expediente</label>
+								<input type="text" class="form-control" id="inputLinkExpediente" placeholder="Ingrese enlace">
+								<small class="text-help">
+									<span class="material-icons">
+										report_problem
+									</span>
+									El formato es incorrecto
+								</small>
 							</div>
 
-							<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalInstrucciones">
-								Registrar nuevo caso
-							</button>
-						</div>
+							<div class="footer-stepper">
+								<button type="button" name="button" class="btn btn-large primary-button">
+									Enviar resultados
+								</button>
+							</div>
 
-						<table class="table">
-							<thead>
-								<tr>
-									<th scope="col">ID Caso</th>
-									<th scope="col">Tipo de contratación</th>
-									<th scope="col">Sorteo 1</th>
-									<th scope="col">Sorteo 2</th>
-									<th scope="col">Sorteo 3</th>
-									<th scope="col">Sorteo 4</th>
-									<th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">2022-0192</th>
-									<td>Contratación Pública</td>
-									<td>
-										<span class="material-icons success-color">
-											check_circle
-										</span>
-									</td>
-									<td>
-										<span class="material-icons success-color">
-											check_circle
-										</span>
-									</td>
-									<td>-</td>
-									<td>-</td>
-									<td>
-										<div class="tag-status">
-											<span class="status-danger"></span>
-											En proceso
-										</div>
-									</td>
-									<td>
-										<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalContinuarSorteo">
-											Continuar sorteo
-										</button>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">2022-0192</th>
-									<td>Contratación Pública</td>
-									<td>
-										<span class="material-icons success-color">
-											check_circle
-										</span>
-									</td>
-									<td>
-										<span class="material-icons success-color">
-											check_circle
-										</span>
-									</td>
-									<td>-</td>
-									<td>-</td>
-									<td>
-										<div class="tag-status">
-											<span class="status-danger"></span>
-											En proceso
-										</div>
-									</td>
-									<td>
-										<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalContinuarSorteo">
-											Continuar soreto
-										</button>
-									</td>
-								</tr>
-
-							</tbody>
-						</table>
+						</form>
 					</div>
 				</div>
 			</div>
