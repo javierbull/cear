@@ -79,6 +79,13 @@
 							</div>
 						</button>
 					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="pills-correos-tab" data-bs-toggle="pill" data-bs-target="#pills-correos" type="button" role="tab" aria-controls="pills-correos" aria-selected="false">
+							<div class="step-position">
+								4
+							</div>
+						</button>
+					</li>
 				</ul>
 				<div class="tab-content" id="pills-especialidad-tabContent">
 					<div class="tab-pane fade show active" id="pills-especialidad" role="tabpanel" aria-labelledby="pills-especialidad-tab">
@@ -508,6 +515,106 @@
 								Regresar
 							</button>
 						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-correos" role="tabpanel" aria-labelledby="pills-correos-tab">
+
+						<hgroup class="hgroup-title-stepper">
+							<h2 class="title-stepper">Caso 2022-0192</h2>
+							<h3 class="subtitle-stepper">Sorteo 4</h3>
+						</hgroup>
+
+						<div class="content-case-controls marginBottom-2">
+							<div class="col-xl-5">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar casos" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										El usuario es incorrecto
+									</small>
+								</div>
+							</div>
+
+							<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalInstrucciones">
+								Registrar nuevo caso
+							</button>
+						</div>
+
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">ID Caso</th>
+									<th scope="col">Tipo de contratación</th>
+									<th scope="col">Sorteo 1</th>
+									<th scope="col">Sorteo 2</th>
+									<th scope="col">Sorteo 3</th>
+									<th scope="col">Sorteo 4</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">2022-0192</th>
+									<td>Contratación Pública</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>-</td>
+									<td>-</td>
+									<td>
+										<div class="tag-status">
+											<span class="status-danger"></span>
+											En proceso
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalContinuarSorteo">
+											Continuar sorteo
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2022-0192</th>
+									<td>Contratación Pública</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>-</td>
+									<td>-</td>
+									<td>
+										<div class="tag-status">
+											<span class="status-danger"></span>
+											En proceso
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalContinuarSorteo">
+											Continuar soreto
+										</button>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
